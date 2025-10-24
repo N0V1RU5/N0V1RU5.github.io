@@ -3,42 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | N0V1RU5</title>
+    <title>N0V1RU5 | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>N0V1RU5</h1>
-        <div class="subtitle">Game Developer & Programmer Portfolio</div>
+        <div class="subtitle">GameDev Engineer & Creative Coder</div>
     </header>
+    <nav>
+        <a href="#about">O mně</a>
+        <a href="#projects">Projekty</a>
+        <a href="#skills">Technologie</a>
+        <a href="#random">Random Fact</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
     <main>
-        <section>
+        <section id="about">
             <h2>O mně</h2>
             <p>
-                Jsem nadšený <strong>game developer</strong> a programátor se zaměřením na tvorbu her v C++, Go, Unity, případně s SDL2.<br>
-                Baví mě grafika, AI a vytváření herních prototypů.<br>
-                Specializuji se na 2D/3D logiku a optimalizaci Runtime systémů.
+                Jsem kreativní programátor a student, <span class="hi-pink">který propojuje logiku, matematiku a vizuální umění</span>.<br>
+                Specializuji se na <span class="hi-blue">vývoj her, procedurální generování a grafické algoritmy</span>.<br>
+                Práce a zábava se u mě často prolínají, <span class="hi-pink">výzvy & experimenty</span> mě ženou dál.  
+                <br>
+                <span class="bio-random">Nebaví mě dělat weby, radši hraju indie hry, kreslím, programuju, nebo prostě žiju chaoticky... (neon & miku mod)</span>
             </p>
+            <aside class="ai-note">
+                <span>Info: Některé části portfolia jsem navrhl s pomocí AI, protože efektivita > stereotyp 😁</span>
+            </aside>
         </section>
-        <section>
+        <section id="projects">
             <h2>Projekty</h2>
             <div class="project">
-                <span class="project-title">Shadow Daggers Simulator</span> — Simulace physics a grafiky nožů, Real-time kolize, C++, SDL2.<br>
-                <a href="#">Github</a> | <a href="#">Demo Video</a>
+                <div class="title">AMazing</div>
+                <div class="tech">Python, OOP, DFS, Numpy</div>
+                <div class="desc">Algoritmický generátor bludišť. Kombinuju zábavu s matematikou a grafikou. <a href="https://github.com/N0V1RU5/AMazing" target="_blank">Repozitář &rarr;</a></div>
             </div>
             <div class="project">
-                <span class="project-title">Red Skins Inventory Tool</span> — Analýza skinů ve hrách, Go + Web, API integrace, live statistiky.<br>
-                <a href="#">Github</a>
+                <div class="title">Maturita – It Hunts</div>
+                <div class="tech">Unity, C#, ShaderLab</div>
+                <div class="desc">Moje maturitní práce: 2D horror. Level design + gameplay/AI logika. <a href="https://github.com/N0V1RU5/maturita" target="_blank">Repozitář &rarr;</a></div>
             </div>
-            <!-- Přidej další projekty sem -->
+            <!-- Přidej nové projekty nebo podle potřeb -->
         </section>
-        <section>
+        <section id="skills">
+            <h2>Technologie a dovednosti</h2>
+            <ul class="tech-list">
+                <li><span class="hi-blue">C++</span>, Unity, Go, Python, Godot, SFML, ShaderLab</li>
+                <li>Procedurální generování, simulace, vizuální efekty, optimalizace runtime</li>
+                <li>Kreativní myšlení, rychlá adaptace, systémový i chaotický přístup</li>
+            </ul>
+        </section>
+        <section id="random">
+            <h2>Random Fact</h2>
+            <div class="random-box" id="randomFact">
+                <!-- Naplní JS dynamicky -->
+            </div>
+            <button class="random-btn" onclick="showRandomFact()">Další náhodný fakt</button>
+        </section>
+        <section id="contact">
             <h2>Kontakt</h2>
-            <div class="contact">
-                Email: <a href="mailto:ty@email.cz">ty@email.cz</a> <br>
-                GitHub: <a href="https://github.com/N0V1RU5" target="_blank">github.com/N0V1RU5</a>
+            <div>
+                GitHub: <a href="https://github.com/N0V1RU5" target="_blank">N0V1RU5</a> <br>
+                Email: <a href="mailto:matesp04@gmail.com">matesp04@gmail.com</a>
             </div>
         </section>
     </main>
+    <footer>
+        <span>2025 &copy; N0V1RU5. Neon pink (#FF69B4) & miku blue (#86cecb) forever. <span title="Hidden miku">🎤</span></span>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
