@@ -7,70 +7,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>N0V1RU5</h1>
-        <div class="subtitle">GameDev Engineer & Creative Coder</div>
-    </header>
-    <nav>
-        <a href="#about">O mně</a>
-        <a href="#projects">Projekty</a>
-        <a href="#skills">Technologie</a>
-        <a href="#random">Random Fact</a>
-        <a href="#contact">Kontakt</a>
+    <nav class="navbar">
+        <span class="logo">N0V1RU5</span>
+        <div class="navlinks">
+            <a href="#about" id="navAbout">O mně</a>
+            <a href="#projects" id="navProjects">Projekty</a>
+            <a href="#technologies" id="navTechnologies">Technologie</a>
+            <a href="#contact" id="navContact">Kontakt</a>
+        </div>
+        <div class="toggles">
+            <button id="modeToggle">🌙</button>
+            <select id="langSelect">
+                <option value="cz">CZ</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
     </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 id="heroTitle">GameDev Engineer & Creative Chaos</h1>
+            <p id="heroSubtitle">Propojuju techniku, umění a experiment. Nejlepší práce navrch, chaos s řádem, neon & miku vibes!</p>
+            <a href="#contact" class="primary-btn" id="heroContactBtn">Spoj se se mnou</a>
+        </div>
+    </header>
     <main>
-        <section id="about">
+        <section id="about" class="card">
             <h2>O mně</h2>
-            <p>
-                Jsem kreativní programátor a student, <span class="hi-pink">který propojuje logiku, matematiku a vizuální umění</span>.<br>
-                Specializuji se na <span class="hi-blue">vývoj her, procedurální generování a grafické algoritmy</span>.<br>
-                Práce a zábava se u mě často prolínají, <span class="hi-pink">výzvy & experimenty</span> mě ženou dál.  
-                <br>
-                <span class="bio-random">Nebaví mě dělat weby, radši hraju indie hry, kreslím, programuju, nebo prostě žiju chaoticky... (neon & miku mod)</span>
+            <p id="bioText">
+                Jsem kreativní programátor, student a tvůrce, co spojuje vyspělou logiku s estetikou. Baví mě herní prototypy, procedural generované světy, grafické algoritmy i kreslení, muzika, anime. <br/>
+                Funkční chaos – v práci, v životech. Portfolio je navržené mnou, AI použita jen pro urychlení, protože radši programuju nebo tvořím hry, než weby!
             </p>
-            <aside class="ai-note">
-                <span>Info: Některé části portfolia jsem navrhl s pomocí AI, protože efektivita > stereotyp 😁</span>
-            </aside>
+            <span class="easter-egg" title="Nájdi Miku!">🎤</span>
         </section>
-        <section id="projects">
-            <h2>Projekty</h2>
-            <div class="project">
-                <div class="title">AMazing</div>
-                <div class="tech">Python, OOP, DFS, Numpy</div>
-                <div class="desc">Algoritmický generátor bludišť. Kombinuju zábavu s matematikou a grafikou. <a href="https://github.com/N0V1RU5/AMazing" target="_blank">Repozitář &rarr;</a></div>
-            </div>
-            <div class="project">
-                <div class="title">Maturita – It Hunts</div>
-                <div class="tech">Unity, C#, ShaderLab</div>
-                <div class="desc">Moje maturitní práce: 2D horror. Level design + gameplay/AI logika. <a href="https://github.com/N0V1RU5/maturita" target="_blank">Repozitář &rarr;</a></div>
-            </div>
-            <!-- Přidej nové projekty nebo podle potřeb -->
+        <section id="projects" class="card">
+            <h2>Nejlepší Projekty</h2>
+            <div id="projectCards"></div>
         </section>
-        <section id="skills">
-            <h2>Technologie a dovednosti</h2>
-            <ul class="tech-list">
-                <li><span class="hi-blue">C++</span>, Unity, Go, Python, Godot, SFML, ShaderLab</li>
-                <li>Procedurální generování, simulace, vizuální efekty, optimalizace runtime</li>
-                <li>Kreativní myšlení, rychlá adaptace, systémový i chaotický přístup</li>
-            </ul>
+        <section id="technologies" class="card">
+            <h2>Technologie & Skills</h2>
+            <div class="skills-taglist" id="skillsTags"></div>
         </section>
-        <section id="random">
+        <section id="randomfact" class="card">
             <h2>Random Fact</h2>
-            <div class="random-box" id="randomFact">
-                <!-- Naplní JS dynamicky -->
-            </div>
-            <button class="random-btn" onclick="showRandomFact()">Další náhodný fakt</button>
+            <div id="randomBox"></div>
+            <button onclick="showRandomFact()" class="primary-btn">Další fakt</button>
         </section>
-        <section id="contact">
+        <section id="contact" class="card">
             <h2>Kontakt</h2>
-            <div>
-                GitHub: <a href="https://github.com/N0V1RU5" target="_blank">N0V1RU5</a> <br>
+            <p id="contactText">
+                GitHub: <a href="https://github.com/N0V1RU5" target="_blank">N0V1RU5</a><br>
                 Email: <a href="mailto:matesp04@gmail.com">matesp04@gmail.com</a>
-            </div>
+            </p>
         </section>
     </main>
     <footer>
-        <span>2025 &copy; N0V1RU5. Neon pink (#FF69B4) & miku blue (#86cecb) forever. <span title="Hidden miku">🎤</span></span>
+        <span id="footerText">2025 &copy; N0V1RU5. Neon pink (#FF69B4) & miku blue (#86cecb) forever. 🎤</span>
     </footer>
     <script src="main.js"></script>
 </body>
