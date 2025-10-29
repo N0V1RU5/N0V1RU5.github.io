@@ -26,46 +26,46 @@
     <header class="hero">
         <div class="hero-content">
             <h1 id="heroTitle">GameDev Engineer & Creative Chaos</h1>
-            <p id="heroSubtitle">Propojuju techniku, umění a experiment. Nejlepší práce navrch, chaos s řádem, neon & miku vibes!</p>
+            <p id="heroSubtitle">Propojuji techniku, umění a chaos.</p>
             <a href="#contact" class="primary-btn" id="heroContactBtn">Spoj se se mnou</a>
         </div>
     </header>
     <main>
+        <section id="about" class="card">
+            <h2 id="aboutTitle">O mně</h2>
+            <p id="bioText">
+                Jsem programátor, student a tvůrce. Baví mě herní prototypy, procedural generované světy, grafické algoritmy i kreslení, muzika, anime.<br /><br />
+                Portfolio je navržené mnou, AI použita jen na návrhy rozložení nebo překlady. Preferuji vlastní tvorbu/ruční ladění.
+            </p>
+            <span class="easter-egg" id="mikuEgg" title="Našel jsi Miku easter egg!">🎤</span>
+        </section>
+        
         <section id="projects" class="card">
-  <h2 id="projectsTitle">Projekty</h2>
-  <div id="projectCards">
+            <h2 id="projectsTitle">Projekty</h2>
+            <div id="projectCards">
+                <!-- Renderuje JS! -->
+            </div>
+        </section>
 
-    <div class="project-card">
-      <div class="project-title">Maturita – It Hunts</div>
-      <div class="project-tech">Unity, C#, ShaderLab</div>
-      <div class="project-desc">
-        Maturitní práce: 2D horror, level design, gameplay, vlastní AI pro nepřítele, custom UI a shader efekty.
-      </div>
-      <a href="https://github.com/N0V1RU5/maturita" class="project-link" target="_blank">Repozitář &rarr;</a>
-    </div>
-
-    <div class="project-card">
-      <div class="project-title">ScreenSaver (Go + SDL2)</div>
-      <div class="project-tech">Go, SDL2, Custom graphics</div>
-      <div class="project-desc">
-        Vizuální screensaver vygenerovaný na míru: vícebarevné objekty s překryvy a animací, vznikl jako programovací cvičení v Go pomocí SDL2 bindingů.<br>
-      </div>
-      <div class="project-media">
-        <img src="ScreenSaver.jpg" alt="Screenshot screensaveru – Go/SDL2" style="max-width: 320px; border-radius: 14px; margin-top: 1em; box-shadow: 0 2px 12px #86cecb99;">
-      </div>
-    </div>
-
-    <div class="project-card future">
-      <div class="project-title">Další projekty brzy!</div>
-      <div class="project-desc">Pracuje se na nových demíčkách a pokročilých nástrojích (generátory světů, engine komponenty...)</div>
-    </div>
-
-  </div>
-</section>
-
+        <section id="technologies" class="card">
+            <h2 id="techTitle">Technologie & Skills</h2>
+            <div class="skills-taglist" id="skillsTags"></div>
+        </section>
+        <section id="randomfact" class="card">
+            <h2 id="randomTitle">Random Fact</h2>
+            <div id="randomBox"></div>
+            <button onclick="showRandomFact()" class="primary-btn" id="randomBtn">Další fakt</button>
+        </section>
+        <section id="contact" class="card">
+            <h2 id="contactTitle">Kontakt</h2>
+            <p id="contactText">
+                GitHub: <a href="https://github.com/N0V1RU5" target="_blank">N0V1RU5</a><br>
+                Email: <a href="mailto:petera.martin831@gmail.com">petera.martin831@gmail.com</a>
+            </p>
+        </section>
     </main>
     <footer>
-        <span id="footerText">2025 &copy; N0V1RU5. Neon pink (#FF69B4) & miku blue (#86cecb) forever. 🎤</span>
+        <span id="footerText">2025 &copy; N0V1RU5.</span>
     </footer>
     <script src="main.js"></script>
 </body>
