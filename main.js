@@ -114,16 +114,20 @@ function renderProjects(lang = 'cz') {
     const linkText = translations[lang].repoLink;
     
     container.innerHTML = '';
-    projectList.forEach(proj => {
-        container.innerHTML += `
-            <div class="project-card">
-                <div class="project-title">${proj.title}</div>
-                <div class="project-tech">${proj.tech}</div>
-                <div class="project-desc">${proj.desc}</div>
-                <a href="${proj.link}" class="project-link" target="_blank">${linkText} &rarr;</a>
-            </div>
-        `;
-    });
+projectList.forEach(proj => {
+  container.innerHTML += `
+    <div class="project-card">
+      <div class="project-title">${proj.title}</div>
+      <div class="project-tech">${proj.tech}</div>
+      <div class="project-desc">${proj.desc}</div>
+      ${proj.img ? 
+        `<div class="project-media"><img src="${proj.img}" alt="Screenshot projektu" class="project-image" /></div>`
+         : ''}
+      ${proj.link ? 
+        `<a href="${proj.link}" class="project-link" target="_blank">${linkText} &rarr;</a>` 
+         : ''}
+    </div>`;
+});
 }
 
 function renderSkills() {
