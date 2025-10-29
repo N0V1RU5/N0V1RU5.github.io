@@ -3,20 +3,30 @@ let currentLang = 'cz';
 
 // Projekty data
 const projects = {
-    cz: [
-        {
-            title: "AMazing",
-            tech: "Python, OOP, DFS, Numpy",
-            desc: "Algoritmický generátor bludišť. Zábava, matika, grafika, vše v jednom.",
-            link: "https://github.com/N0V1RU5/AMazing"
-        },
-        {
-            title: "Maturita – It Hunts",
-            tech: "Unity, C#, ShaderLab",
-            desc: "Maturitní práce: 2D horror, level design, gameplay + AI logika.",
-            link: "https://github.com/N0V1RU5/maturita"
-        }
-    ],
+  cz: [
+    {
+      title: "Maturita – It Hunts",
+      tech: "Unity, C#, ShaderLab",
+      desc: "Maturitní práce: 2D horror, level design, gameplay, vlastní AI pro nepřítele, custom UI a shader efekty.",
+      link: "https://github.com/N0V1RU5/maturita",
+      img: null
+    },
+    {
+      title: "ScreenSaver (Go + SDL2)",
+      tech: "Go, SDL2, Custom graphics",
+      desc: "Vizuální screensaver generovaný vlastním kódem: barevné objekty s překryvy a animací, programováno v Go pomocí SDL2 bindingů.",
+      link: null,
+      img: "ScreenSaver.jpg"
+    },
+    {
+      title: "Další projekty brzy!",
+      tech: "",
+      desc: "Pracuje se na nových demíčkách a engine nástrojích...",
+      link: null,
+      img: null
+    }
+  ],
+    
     en: [
         {
             title: "AMazing",
