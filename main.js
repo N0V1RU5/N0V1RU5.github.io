@@ -16,7 +16,7 @@ const projects = {
             tech: "Go, SDL2, Custom graphics",
             desc: "Vizuální screensaver generovaný vlastním kódem: barevné objekty s překryvy a animací, programováno v Go pomocí SDL2 bindingů.",
             link: null,
-            img: "ScreenSaver.jpg"
+            img: "ScreenSaver.gif"
         },
         {
             title: "Další projekty brzy!",
