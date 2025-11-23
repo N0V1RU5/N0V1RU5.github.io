@@ -307,24 +307,30 @@ h1 {
     border-color: var(--primary-color);
 }
 
-.icon-emoji {
-    font-size: 2.5rem;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.contact-item:hover .icon-emoji {
-    transform: scale(1.1);
-}
-
+/* UNIVERSAL ICON BOX */
+.icon-emoji,
 .icon-img {
-    width: 24px;
-    height: 24px;
-    display: block;
-    object-fit: contain;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: transform 0.3s ease;
 }
 
+/* EMOJI SCALED PROPERLY */
+.icon-emoji {
+    font-size: 40px; /* aby emoji vyplnilo box */
+    line-height: 1;
+}
+
+/* PNG ICON */
+.icon-img {
+    object-fit: contain;
+}
+
+/* HOVER EFFECT */
+.contact-item:hover .icon-emoji,
 .contact-item:hover .icon-img {
     transform: scale(1.1);
 }
