@@ -193,10 +193,11 @@ h1 {
 
 .project-card {
     background: var(--card-bg);
-    padding: 30px;
+    padding: 0;
     border-radius: 15px;
     transition: all 0.3s ease;
     border: 1px solid rgba(99, 102, 241, 0.1);
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -205,15 +206,37 @@ h1 {
     border-color: var(--primary-color);
 }
 
+/* Project Image Styling */
+.project-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
 .project-card h3 {
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin: 20px 30px 15px;
     font-size: 1.5rem;
 }
 
 .project-card p {
     color: var(--text-secondary);
-    margin-bottom: 20px;
+    margin: 0 30px 20px;
     line-height: 1.6;
 }
 
@@ -221,7 +244,7 @@ h1 {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin: 0 30px 20px;
 }
 
 .tag {
@@ -241,6 +264,7 @@ h1 {
     align-items: center;
     gap: 5px;
     transition: all 0.3s ease;
+    margin: 0 30px 30px;
 }
 
 .project-link:hover {
@@ -261,32 +285,45 @@ h1 {
     margin: 0 auto;
 }
 
+/* Updated: Whole contact card is now clickable */
 .contact-item {
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
     background: var(--dark-bg);
     border-radius: 10px;
     transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
 }
 
 .contact-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+    border-color: var(--primary-color);
 }
 
 .contact-item .icon {
     font-size: 2.5rem;
     display: block;
-    margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
-.contact-item a {
+.contact-item:hover .icon {
+    transform: scale(1.1);
+}
+
+.contact-text {
     color: var(--text-secondary);
-    text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 1rem;
 }
 
-.contact-item a:hover {
+.contact-item:hover .contact-text {
     color: var(--primary-color);
 }
 
@@ -336,5 +373,9 @@ footer {
     .language-toggle {
         top: 10px;
         right: 10px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
 }
